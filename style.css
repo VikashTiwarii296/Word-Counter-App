@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #e4e5e7;
+    display: grid;
+    place-content: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    width: 700px;
+    padding: 1rem 0;
+}
+
+.textInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 1rem 1rem;
+    position: relative;
+}
+
+.textInfo .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info p:last-child {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.info p:first-child {
+    text-transform: uppercase;
+    color: rgb(172, 171, 169);
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.textInfo::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgb(207, 204, 204);
+    left: 0;
+    bottom: 0;
+}
+
+.writingAreaa {
+    width: 100%;
+    padding: 0rem 1rem;
+}
+
+.writingAreaa textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 9px 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.writingAreaa textarea::placeholder {
+    color: rgb(211, 209, 209);
+    text-transform: capitalize !important;
+}
+
+.textOperation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textOperation button {
+    padding: 8px 16px;
+    background-color: rgb(61, 236, 61);
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.textOperation button:hover {
+    background-color: rgb(6, 182, 6);
+    transition: 0.5s;
+}
+
+.disabled {
+    background-color: rgb(158, 252, 158) !important;
+    user-select: none;
+    pointer-events: none;
+}
